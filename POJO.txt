@@ -1,0 +1,93 @@
+1.Customer
+2.BankDetails
+3.Cibil
+4.BankManager
+5.LandVerificationOfficer
+6.FinanceVerificationOfficer
+7.CreditManager
+
+https://github.com/vinay-kumbhar/FDJ151Project
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/FDJ151/gitdemo/.git/
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git remote add origin "https://github.com/vinay-kumbhar/FDJ151Project.git"    
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git pull origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 606 bytes | 20.00 KiB/s, done.
+From https://github.com/vinay-kumbhar/FDJ151Project
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        project Doc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git add project Doc.txt
+fatal: pathspec 'project' did not match any files
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git add project Doc.txt
+fatal: pathspec 'project' did not match any files
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        project Doc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git add .
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   project Doc.txt
+
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git commit -m "1st commmit"
+[master 344db4f] 1st commmit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 project Doc.txt
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git push origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/vinay-kumbhar/FDJ151Project
+.git/'
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 72.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vinay-kumbhar/FDJ151Project.git
+   59e2c0d..344db4f  master -> master
+
+Lenovo@DESKTOP-H6DH4VO MINGW64 ~/Desktop/FDJ151/gitdemo (master)
+$
