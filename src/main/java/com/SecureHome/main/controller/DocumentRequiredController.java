@@ -41,7 +41,7 @@ public class DocumentRequiredController {
 			d.setBankCheque(f6.getBytes());
 			d.setPassportSizePhoto(f7.getBytes());
 			d.setLast6MonthBankStatement(f8.getBytes());
-			
+			System.out.println("lljbh");
 			//Gson g=new Gson();
 			
 			//DocumentRequired drr=g.fromJson(DocumentRequired.class);
